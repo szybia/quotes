@@ -1,0 +1,44 @@
+@import url("globals.css");
+
+a:focus {
+    outline:0;
+}
+
+.underline {
+    height: 2px;
+    margin: 0;
+    width: 34%;
+    background: white;
+    border: none;
+    transition: .3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+}
+
+/*
+*    MAIN HERO LOGO
+*/
+
+h2 {
+    padding-top: 10px;
+}
+
+.hero {
+    background: url("../img/hero.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-position: center;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+}
