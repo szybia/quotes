@@ -19,8 +19,7 @@ function displayQuote(quotes) {
 	// ]
 	let q = quotes
 					.split('\n\n')
-					.map(quote => quote.replace('\n', ''))
-					.map(quote => quote.split('- '))
+					.map(quote => quote.split('\n- '))
 					.map(quote => {
 						return {
 							"quote": quote[0],
