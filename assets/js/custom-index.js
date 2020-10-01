@@ -17,19 +17,13 @@ function displayQuote(quotes) {
 	//			'author': <author>
 	// 	}
 	// ]
-	let q = quotes
-					.split('\n\n')
-					.map(quote => quote.split('\n- '))
-					.map(quote => {
-						return {
-							"quote": quote[0],
-							"author": quote[1]
-						}
-					});
-	let randomQuoteIndex = getRandomNumber() % q.length;
-	let randomQuote = q[randomQuoteIndex];
-	$( '.quote' ).text(randomQuote['quote']);
-	$( '.author' ).text(randomQuote['author']);
+	let quotesArray = quotes.split('\n\n');
+	let randNum = getRandomNumber();
+	var randomQuoteIndex = randNum % quotesArray.length;
+	let [quote, author] = quotesArray[randomQuoteIndex].split('\n- ');
+	console.log(quotesArray);
+	$( '.quote' ).text(quote);
+	$( '.author' ).text(author);
 }
 
 function getRandomNumber() {
